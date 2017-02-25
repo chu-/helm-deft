@@ -145,10 +145,10 @@ matching lines.  FILELST is a list of file paths"
 						  "-w")
 					      "")))
 				      (if ptrnlst
-					  (format "$(grep %s -Elie '%s' %s)"
+					  (format "(grep %s -Elie '%s' %s)"
 						  addflags pattern
 						  (build-inner-cmd ptrnlst filelst))
-					(format "$(grep %s -Elie '%s' %s)"
+					(format "(grep %s -Elie '%s' %s)"
 						addflags pattern filelst)))))
 			 (build-inner-cmd ptrnlst filelst))
 		     filelst)))
